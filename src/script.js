@@ -99,11 +99,7 @@ function listCreate() {
     span.textContent = pkmn.name;
     img.src = pokemon.icon;
     li.className = `pokemon ${pkmn.data.types[0]}`;
-    li.onclick = () => selectPokemon(pkmn.name); // quando clicar na li que é isso aqui aí chama a selectPokemon() né?isso, passando o name como argumento
-    // MANEIRA ANTIGA SEM CALLBACK
-    // li.onclick = function() {
-    //   return selectPokemon(pkmn.name)
-    // }
+    li.onclick = () => selectPokemon(pkmn.name);
 
     li.append(img);
     li.append(span);
@@ -183,9 +179,6 @@ function selectPokemon(pokemonName) {
     li.textContent = ability;
     ulAbilities.append(li);
   });
-
-  // BURRO
-  // DENTRO DE POKEMON EXISTE ID POR ACASO?USA A CABEÇA
 }
 
 function toggleTheme() {
