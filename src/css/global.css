@@ -1,0 +1,60 @@
+:root {
+  --topTextColor: white;
+  --textColor: #121212;
+  --backgroundColor: #d5dce0;
+  --cardColor: #f7f7f7;
+  --themeButtonColor: #212121;
+}
+
+:root[data-theme='light'] {
+  --topTextColor: white
+  --backgroundColor: #d5dce0;
+  --cardColor: #f7f7f7;
+  --themeButtonColor: #212121;
+}
+
+:root[data-theme='dark'] {
+  --topTextColor: white;
+  --textColor: white;
+  --backgroundColor: #121212;
+  --cardColor: #212121;
+  --themeButtonCollor: #f7f7f7;
+}
+
+body {
+  color: var(--textColor);
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+
+.pokedex {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--themeButtonCollor);
+  opacity: 0.8;
+  border: 1px solid transparent;
+  border-radius: 999999px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

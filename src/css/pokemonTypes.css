@@ -1,0 +1,89 @@
+.normal,
+.normal:hover {
+  background-color: #9099a2;
+}
+
+.fire,
+.fire:hover {
+  background-color: #f6a14e;
+}
+
+.water,
+.water:hover {
+  background-color: #4f8fda;
+}
+
+.electric,
+.electric:hover {
+  background-color: #f2d438;
+}
+
+.grass,
+.grass:hover {
+  background-color: #64bb5b;
+}
+
+.ice,
+.ice:hover {
+  background-color: #73cebf;
+}
+
+.fighting,
+.fighting:hover {
+  background-color: #ce3f6a;
+}
+
+.poison,
+.poison:hover {
+  background-color: #ab6ac8;
+}
+
+.ground,
+.ground:hover {
+  background-color: #d77747;
+}
+
+.flying,
+.flying:hover {
+  background-color: #93aade;
+}
+
+.psychic,
+.psychic:hover {
+  background-color: #fd6f77;
+}
+
+.bug,
+.bug:hover {
+  background-color: #91be2e;
+}
+
+.rock,
+.rock:hover {
+  background-color: #c8b78b;
+}
+
+.ghost,
+.ghost:hover {
+  background-color: #5468b1;
+}
+
+.dragon,
+.dragon:hover {
+  background-color: #086fbd;
+}
+
+.dark,
+.dark:hover {
+  background-color: #5e5164;
+}
+
+.steel,
+.steel:hover {
+  background-color: #5990a1;
+}
+
+.fairy,
+.fairy:hover {
+  background-color: #ec90e7;
+}
