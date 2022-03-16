@@ -32,7 +32,7 @@
 
   .pokemonList ul {
     display: flex;
-    gap: 8 px;
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: space-between;
   }

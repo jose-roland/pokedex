@@ -105,9 +105,6 @@ function listCreate() {
     li.append(span);
     ul.append(li);
   });
-
-  console.log({ pokemons });
-
   pokemonList.append(ul);
 }
 
