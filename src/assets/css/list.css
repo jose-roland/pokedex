@@ -7,18 +7,26 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  background-color: var(--cardColor);
   padding: 5px 10px;
   gap: 10px;
   cursor: pointer;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--topTextColor);
+  transform: scale(1.1);
   transition: 0.2s ease-in-out;
 }
 
+.inactive {
+  background-color: var(--cardColor);
+  color: var(--textColor) !important;
+  transform: scale(1) !important;
+}
+
 .pokemonList .pokemon:hover {
-  transform: scale(1.1);
+  color: var(--topTextColor) !important;
+  transform: scale(1.1) !important;
 }
 
 .pokemonList .pokemon img {

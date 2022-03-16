@@ -98,7 +98,8 @@ function listCreate() {
 
     span.textContent = pkmn.name;
     img.src = pokemon.icon;
-    li.className = `pokemon ${pkmn.data.types[0]}`;
+    li.id = `pokemon-${pkmn.name}`;
+    li.className = `pokemon inactive ${pkmn.data.types[0]}`;
     li.onclick = () => selectPokemon(pkmn.name);
 
     li.append(img);
@@ -110,6 +111,13 @@ function listCreate() {
 
 function selectPokemon(pokemonName) {
   const pokemon = pokemons.find(e => e.name === pokemonName);
+  const li = document.getElementById(`pokemon-${pokemonName}`);
+
+  document.querySelectorAll('.pokemon').forEach(div => {
+    div.classList.add('inactive');
+  });
+
+  li.classList.remove('inactive');
 
   const divPokemonName = document.getElementById('pokemon-name');
   divPokemonName.textContent = pokemon.name;

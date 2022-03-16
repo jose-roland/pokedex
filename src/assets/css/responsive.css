@@ -3,13 +3,27 @@
     font-size: 12px;
   }
 
-  .pokedex {
+  main {
+    display: flex;
     flex-direction: column;
-    padding: 30px 0;
   }
 
-  .pokemonCard {
-    max-width: 300px;
+  .container-theme-toggle {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .theme-toggle {
+    position: unset;
+  }
+
+  .pokedex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
   }
 
   .pokemonCard .cardImage {
@@ -27,7 +41,7 @@
   }
 
   .pokemonList {
-    max-width: 300px;
+    max-width: 100%;
   }
 
   .pokemonList ul {
