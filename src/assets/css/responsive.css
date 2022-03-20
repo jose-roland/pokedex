@@ -46,9 +46,9 @@
 
   .pokemonList ul {
     display: flex;
-    gap: 8px;
+    gap: 5px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .pokemonList .pokemon {
