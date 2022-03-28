@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--cardColor);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+}
+
+::placeholder {
+  color: var(--textColor);
+  opacity: 0.5;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--textColor);
+  font-size: 2.5rem;
+}
+
+.logo span {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+}
+
+.logo span span {
+  font-family: Poppins, sans-serif;
+  font-weight: 800;
+}
+
+.searchFeatures {
+  gap: 1rem;
+}
+
+.searchFeatures,
+.searchBar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.searchBar input {
+  height: 2rem;
+  padding-left: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem 0 0 1rem;
+  color: var(--textColor);
+  background-color: var(--scrollThumbColor);
+
+  font-size: 1rem;
+}
+
+.searchBar button {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.5rem;
+  border-radius: 0 1rem 1rem 0;
+  color: var(--textColor);
+  background-color: var(--scrollThumbColor);
+}
+
+.filterButton {
+  width: 2rem;
+  height: 2rem;
+  color: var(--textColor);
+  background-color: transparent;
+  border-radius: 2rem;
+
+  transition: 0.25s;
+}
+
+.filterButton:hover {
+  background-color: var(--backgroundColor);
+}
+
+.theme-toggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  background: var(--cardColor);
+  color: var(--themeButtonCollor);
+  border-radius: 1.5rem;
+}

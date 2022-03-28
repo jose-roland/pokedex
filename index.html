@@ -16,13 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./src/assets/css/header.css" />
     <link rel="stylesheet" href="./src/assets/css/pokemonTypes.css" />
     <link rel="stylesheet" href="./src/assets/css/reset.css" />
     <link rel="stylesheet" href="./src/assets/css/global.css" />
@@ -31,16 +32,28 @@
     <link rel="stylesheet" href="./src/assets/css/responsive.css" />
   </head>
   <body onload="load()">
-    <main>
-      <!-- <div class="container-theme-toggle">
-        <button onclick="toggleTheme()">
+    <header>
+      <div class="headerContainer">
+        <div class="logo">
+          <span>min<span>PKD</span> </span>
+        </div>
+        <div id="sfHeader" class="searchFeatures">
+          <div class="searchBar">
+            <input id="inp-search" type="search" placeholder="Search" />
+            <button class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <button class="filterButton">
+            <i class="fa-solid fa-filter"></i>
+          </button>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
           <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
-      </div> -->
-      <button class="theme-toggle" onclick="toggleTheme()">
-        <i class="fa-solid fa-circle-half-stroke"></i>
-      </button>
-
+      </div>
+    </header>
+    <main>
       <div class="pokedex">
         <div class="pokemonCard">
           <div id="type-change" class="topCard normal">
@@ -86,6 +99,18 @@
               </ul>
             </div>
           </div>
+        </div>
+
+        <div id="sfMain" class="searchFeatures">
+          <div class="searchBar">
+            <input id="inp-search" type="search" placeholder="Search" />
+            <button class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <button class="filterButton">
+            <i class="fa-solid fa-filter"></i>
+          </button>
         </div>
 
         <nav id="pokemonList" class="pokemonList"></nav>

@@ -1,24 +1,37 @@
 :root {
-  --topTextColor: white;
-  --textColor: #121212;
   --backgroundColor: #d5dce0;
   --cardColor: #f7f7f7;
+  --scrollThumbColor: #9099a281;
+  --textColor: #121212;
   --themeButtonColor: #212121;
+  --topTextColor: white;
 }
 
 :root[data-theme='light'] {
-  --topTextColor: white;
   --backgroundColor: #d5dce0;
   --cardColor: #f7f7f7;
+  --scrollThumbColor: #9099a281;
+  --textColor: #121212;
   --themeButtonColor: #212121;
+  --topTextColor: white;
 }
 
 :root[data-theme='dark'] {
-  --topTextColor: white;
-  --textColor: white;
   --backgroundColor: #121212;
   --cardColor: #212121;
+  --scrollThumbColor: #9099a281;
+  --textColor: white;
   --themeButtonCollor: #f7f7f7;
+  --topTextColor: white;
+}
+
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-image: url('../images/times.svg');
+  background-size: 0.75rem 0.75rem;
 }
 
 body {
@@ -26,6 +39,7 @@ body {
   color: var(--textColor);
   font-family: 'Poppins', sans-serif;
   user-select: none;
+  overflow-x: hidden;
 }
 
 main {
@@ -35,32 +49,24 @@ main {
   align-items: center;
   justify-content: center;
   transition: 0.25s;
-  padding: 30px;
+  padding: 2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#sfMain {
+  display: none;
 }
 
 .pokedex {
   display: flex;
-  gap: 20px;
-}
-
-.theme-toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  background: rgba(0, 0, 0, 0.1);
-  color: var(--themeButtonCollor);
-  opacity: 0.8;
-  border: 1px solid transparent;
-  border-radius: 999999px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 1.25rem;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.75rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -68,6 +74,6 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--cardColor);
-  border-radius: 10px;
+  background: var(--scrollThumbColor);
+  border-radius: 0.75rem;
 }

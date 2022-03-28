@@ -8,3 +8,13 @@
 ul {
   list-style-type: none;
 }
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+}

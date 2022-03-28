@@ -1,3 +1,5 @@
+document.onkeydown = onKeyDown;
+
 const pokemons = [
   {
     name: 'turtwig',
@@ -203,4 +205,21 @@ function getTheme() {
 function load() {
   getTheme();
   listCreate();
+}
+
+function onKeyDown() {
+  const event = window.event;
+  const searchInput = document.getElementById('inp-search');
+
+  if (event.shiftKey && event.keyCode === 68) {
+    if (document.activeElement !== searchInput) {
+      toggleTheme();
+    }
+  }
+
+  if (event.shiftKey && event.keyCode === 83) {
+    setTimeout(() => {
+      searchInput.focus();
+    }, 0);
+  }
 }
