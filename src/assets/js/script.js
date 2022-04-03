@@ -37,6 +37,9 @@ const pokemons = [
     name: 'empoleon',
     data: {}
   },
+  { name: 'litten', data: {} },
+  { name: 'torracat', data: {} },
+  { name: 'incineroar', data: {} },
   {
     name: 'gengar',
     data: {}
@@ -48,7 +51,8 @@ const pokemons = [
   {
     name: 'sylveon',
     data: {}
-  }
+  },
+  { name: 'steelix', data: {} }
 ];
 
 async function getPokemonData(pokemonName) {
