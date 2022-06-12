@@ -1,1 +1,4 @@
-# Gen 7 - Minimalist Pokédex
+# PokeMin
+> a minimalist pokedex
+
+A simple and personal project.
